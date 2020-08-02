@@ -58,12 +58,26 @@ ul li{
 }
 .chevron{
     color:#fff;
+    
+}
+.chevron-box{
     background-color: #222;
     padding: 20px 39px;
     position: absolute;
     bottom:0%;
     right:5%;
 }
+/* .scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+  }
+  
+  .scroll-to-top:hover {
+    background: #5a5c69;
+  }
+  
+  .scroll-to-top i {
+    font-weight: 800;
+  } */
 #header .container{
     width:110px;
     background-color: #222;
@@ -317,7 +331,7 @@ ul li{
 /*    overflow: hidden;*/
 }
 #abilities ul li:hover{
-    background-color: #CCC;
+    background-color: #EFEFEF;
 }
 .skill-col-40{
     float: right;

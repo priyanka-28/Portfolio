@@ -1,3 +1,4 @@
+function waypoint(){
 new Waypoint({
     element: document.getElementById('profile'),
     handler: function(direction) {
@@ -13,7 +14,30 @@ new Waypoint({
       }
 
     }
-  })
+  });
+  var option = {
+        element: document.getElementById('experiences'),
+        handler: function(direction) {
+        //   console.log('Basic waypoint triggered');
+          var exp = document.getElementById('header-experiences');
+          var profile = document.getElementById('header-profile');
+          if (direction == "down") {
+            // target.classList.remove("navbar");
+            exp.classList.add("header_bg");
+            profile.classList.remove("header_bg");
+          }
+          else{
+            // target.classList.remove("fixed");
+            // target.classList.add("navbar");
+          }
+        }
+    };
+
+  new Waypoint(option);
+
+}
+
+    waypoint();
 
 //   var waypoint = new Waypoint({
 //     element: document.getElementById('new-operator'),
