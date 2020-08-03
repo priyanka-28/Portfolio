@@ -41,6 +41,10 @@ html {
 ul li {
     list-style-type: none;
 }
+#experiences .cont-exp p{
+    text-align: justify;
+
+}
 
 /*******************************************************************
                             PROFILE
@@ -463,11 +467,11 @@ ul li {
     #abilities .container,
     #projects .container,
     #contact .container {
-        width: 620px;
+        max-width: 620px;
     }
 
     .hr {
-        width: 620px;
+        max-width: 620px;
     }
 
     .circle {
@@ -514,11 +518,23 @@ ul li {
     #abilities .container,
     #projects .container,
     #contact .container {
-        width: 420px;
+        max-width: 420px;
     }
 
     .hr {
-        width: 420px;
+        max-width: 420px;
+    }
+    #profile .col-1 h3,#profile .col-3 h3,#profile .col-3 h4,#profile .col-3 p{
+        text-align: center;
+    }
+    #profile .col-1 p{
+        text-align: justify;
+    }
+    .name{
+        font-size: 48px;
+    }
+    .col-3 {
+        padding-left: 0;
     }
 
     .col-1,
@@ -605,7 +621,7 @@ ul li {
 
 @media (min-width: 481px) and (max-width: 767px) {
     #jumbotron .container {
-        width: 420px;
+        max-width: 420px;
     }
 
     #profile .container,
@@ -613,11 +629,14 @@ ul li {
     #abilities .container,
     #projects .container,
     #contact .container {
-        width: 420px;
+        max-width: 420px;
+    }
+    .col-3 {
+        padding: 0;
     }
 
     .hr {
-        width: 420px;
+        max-width: 420px;
     }
 
     #subtitle {
@@ -744,7 +763,7 @@ ul li {
 
 @media (min-width: 200px) and (max-width: 480px) {
     #jumbotron .container {
-        width: 250px;
+        max-width: 250px;
     }
 
     #profile .container,
@@ -752,10 +771,19 @@ ul li {
     #abilities .container,
     #projects .container,
     #contact .container {
-        width: 250px;
+        max-width: 250px;
     }    
     .hr {
-        width: 250px;
+        max-width: 250px;
+    }
+    .col-3 {
+        padding: 0;
+    }
+    #profile .col-1 h3,#profile .col-3 h3,#profile .col-3 h4,#profile .col-3 p{
+        text-align: center;
+    }
+    #profile .col-1 p{
+        text-align: justify;
     }
     .name{
         font-size: 40px;
@@ -830,7 +858,7 @@ ul li {
     }
     .ability-col-50-1 img,
     .ability-col-50-2 img {
-        height: 190px;
+        height: 200px;
     }
     .team-member-info {
         width: 100%;
@@ -846,8 +874,8 @@ ul li {
     }
     
     .team-member-info p {
-        color: #FFF;
         font-size: 15px;
+        color: #FFF;
         font-weight: 300;
         margin-bottom: 15px;
         margin-right: 25px;
