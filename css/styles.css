@@ -884,6 +884,13 @@ ul li {
     #contact a{
         font-size:13px;
     }
+    #contact a span{
+        width: 15px !important;
+    }
+    #contact a .social-icon{
+        margin-right: 15px;
+        /* font-size: 15px; */
+    }
 }
 /*Image Responsive*/
 .img-responsive,
